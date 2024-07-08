@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.mgBottom8 {
+  margin-bottom: 8px;
+}
+.fontWeight200 {
+  font-weight: 200;
+}
+body {
+  background-color: #2d3436;
+  color: #dfe6e9;
+  font-family: 'Inter', sans-serif;
+}
+li {
+  list-style: none;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 70%;
+  }
+}
+header {
+  padding-bottom: 24px;
+}
+header .profilePic {
+  display: block;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transition: all ease 0.3s;
+}
+header .profilePic:hover {
+  box-shadow: 10px 10px 20px 20px rgba(0, 0, 0, 0.3);
+}
+header .profile-bio {
+  text-align: center;
+}
+header .profile-bio-title {
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: 200;
+}
+header .profile-bio-subtitle {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 200;
+}
+header .profile-bio-description {
+  font-size: 14;
+  font-weight: 400;
+  color: #00b84d;
+  margin-bottom: 8px;
+}
+header .profile-bio-description span {
+  color: #7142e0;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 240px;
+  width: 100%;
+  margin: 0 auto;
+}
+.links li img {
+  transition: all ease 0.2s;
+}
+.links li img:hover {
+  transform: scale(1.1);
+}
+.projects-list {
+  margin-top: 32px;
+}
+.projects-list-item a {
+  text-decoration: none;
+  background-color: #1b9b50;
+  display: block;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #dfe6e9;
+  border-radius: 30px;
+  border: 2px solid #1b9b50;
+  transition: all ease 0.5s;
+}
+.projects-list-item a:hover {
+  color: #1b9b50;
+  background-color: transparent;
+}
